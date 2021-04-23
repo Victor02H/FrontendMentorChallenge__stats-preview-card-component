@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturate-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+
+    --white: hsl(0, 0%, 100%);
+    --transparent-white-paragraph: hsla(0, 0%, 100%, 0.75);
+    --transparent-white-heading: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: var(--white);
+}
+
+body {
+    max-width: 1440px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-dark-blue);
+}
+
+.card-container {
+    width: 94%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-desaturate-blue);
+    border-radius: 10px;
+}
+
+.card-informations {
+    width: 542px;
+    padding: 0 80px 0 80px;
+}
+
+.card-informations h1,
+.card-informations strong {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.card-informations strong {
+    color: var(--soft-violet);
+}
+
+.card-informations p {
+    padding: 40px 0 70px;
+    line-height: 26px;
+    color: var(--transparent-white-paragraph);
+}
+
+.card-informations ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.card-informations ul h2 {
+    font-size: 23px;
+    padding-bottom: 10px;
+}
+
+.card-informations ul span {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--transparent-white-paragraph);
+}
+
+
+.card-image,
+.color-layer {
+    height: 482px;
+    position: relative;
+}
+
+.color-layer {
+    width: 583.59px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    opacity: .7;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--soft-violet);
+}
+
+.card-image img {
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+}
+
+
+
